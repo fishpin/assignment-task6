@@ -4,6 +4,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ...config,
     name: 'volunteam',
     slug: 'volunteam',
+    owner: 'fishpin',
     version: '1.0.0',
     orientation: 'portrait',
     icon: './assets/icon.png',
@@ -19,6 +20,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ios: {
         supportsTablet: true,
     },
+    android: {
+        package: 'com.fishpin.volunteam',
+    },
     web: {
         favicon: './assets/favicon.png',
     },
@@ -33,7 +37,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ],
     extra: {
         eas: {
-            projectId: '954f3b8e-1155-4f8f-8601-a2b3126da39e',
+            projectId: '5ad64588-dfda-47a5-8f42-ab47095ee458',
         },
         IMGBB_API_KEY: process.env.IMGBB_API_KEY,
     },
