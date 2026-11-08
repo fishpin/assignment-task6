@@ -31,7 +31,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22 # eas-cli requires Node >= 20.18.3
           cache: yarn
 
       - name: Set up EAS
